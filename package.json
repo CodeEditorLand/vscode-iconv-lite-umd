@@ -1,37 +1,43 @@
 {
-  "name": "@vscode/iconv-lite-umd",
-  "version": "0.7.0",
-  "description": "Iconv-lite as UMD module",
-  "main": "lib/iconv-lite-umd.js",
-  "typings": "iconv-lite-umd.d.ts",
-  "scripts": {
-    "build": "webpack",
-    "prepublish": "webpack",
-    "test": "mocha --reporter spec --grep ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Microsoft/vscode-iconv-lite-umd.git"
-  },
-  "keywords": [
-    "iconv-lite",
-    "umd"
-  ],
-  "author": "Microsoft",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Microsoft/vscode-iconv-lite-umd/issues"
-  },
-  "homepage": "https://github.com/Microsoft/vscode-iconv-lite-umd#readme",
-  "devDependencies": {
-    "buffer": "^6.0.3",
-    "iconv": "^2.3.5",
-    "iconv-lite": "0.6.3",
-    "mocha": "^10.2.0",
-    "semver": "^6.3.0",
-    "string_decoder": "^1.3.0",
-    "unorm": "^1.6.0",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
-  }
+	"name": "@vscode/iconv-lite-umd",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Iconv-lite as UMD module",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "lib/iconv-lite-umd.js",
+	"typings": "iconv-lite-umd.d.ts",
+	"scripts": {
+		"build": "webpack",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"prepublish": "webpack"
+	},
+	"devDependencies": {
+		"buffer": "^6.0.3",
+		"iconv": "^2.3.5",
+		"iconv-lite": "0.6.3",
+		"mocha": "^10.2.0",
+		"semver": "^6.3.0",
+		"string_decoder": "^1.3.0",
+		"typescript-esbuild": "latest",
+		"unorm": "^1.6.0",
+		"webpack": "^5.89.0",
+		"webpack-cli": "^5.1.4"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

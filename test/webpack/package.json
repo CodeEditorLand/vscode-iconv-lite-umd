@@ -1,20 +1,39 @@
 {
-  "name": "webpack-test",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {
-    "test": "karma start"
-  },
-  "devDependencies": {
-    "karma": "^5.0.9",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-mocha": "^2.0.1",
-    "karma-webpack": "^4.0.2",
-    "mocha": "^7.2.0",
-    "puppeteer": "^4.0.0",
-    "webpack": "^4.43.0"
-  },
-  "dependencies": {
-    "iconv-lite": "file:../.."
-  }
+	"name": "webpack-test",
+	"version": "0.0.1",
+	"private": false,
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
+	"dependencies": {
+		"iconv-lite": "file:../.."
+	},
+	"devDependencies": {
+		"karma": "^5.0.9",
+		"karma-chrome-launcher": "^3.1.0",
+		"karma-mocha": "^2.0.1",
+		"karma-webpack": "^4.0.2",
+		"mocha": "^7.2.0",
+		"puppeteer": "^4.0.0",
+		"typescript-esbuild": "latest",
+		"webpack": "^4.43.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
