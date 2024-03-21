@@ -30,7 +30,7 @@
 		"karma-webpack": "^4.0.2",
 		"mocha": "^7.2.0",
 		"puppeteer": "^4.0.0",
-		"typescript-esbuild": "latest",
+		"typescript-esbuild": "0.4.5",
 		"webpack": "^4.43.0"
 	},
 	"publishConfig": {
