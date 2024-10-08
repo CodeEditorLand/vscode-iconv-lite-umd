@@ -2,9 +2,9 @@
 	"description": "Iconv-lite as UMD module",
 	"devDependencies": {
 		"buffer": "^6.0.3",
-		"iconv": "^2.3.5",
+		"iconv": "^3.0.1",
 		"iconv-lite": "0.6.3",
-		"semver": "^6.3.0",
+		"semver": "^7.6.3",
 		"string_decoder": "^1.3.0",
 		"unorm": "^1.6.0"
 	},
