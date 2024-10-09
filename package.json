@@ -1,5 +1,11 @@
 {
+	"name": "@vscode/iconv-lite-umd",
 	"description": "Iconv-lite as UMD module",
+	"main": "lib/iconv-lite-umd.js",
+	"typings": "iconv-lite-umd.d.ts",
+	"scripts": {
+		"build": "webpack"
+	},
 	"devDependencies": {
 		"buffer": "6.0.3",
 		"iconv": "3.0.1",
@@ -7,11 +13,5 @@
 		"semver": "7.6.3",
 		"string_decoder": "1.3.0",
 		"unorm": "1.6.0"
-	},
-	"main": "lib/iconv-lite-umd.js",
-	"name": "@vscode/iconv-lite-umd",
-	"scripts": {
-		"build": "webpack"
-	},
-	"typings": "iconv-lite-umd.d.ts"
+	}
 }
