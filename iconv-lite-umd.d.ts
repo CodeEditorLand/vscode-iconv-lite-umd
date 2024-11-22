@@ -42,6 +42,7 @@ declare module "@vscode/iconv-lite-umd" {
 export interface Options {
 	stripBOM?: boolean;
 	addBOM?: boolean;
+
 	defaultEncoding?: string;
 }
 
