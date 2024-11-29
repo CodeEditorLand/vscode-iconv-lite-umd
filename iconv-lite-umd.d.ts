@@ -41,6 +41,7 @@ declare module "@vscode/iconv-lite-umd" {
 
 export interface Options {
 	stripBOM?: boolean;
+
 	addBOM?: boolean;
 
 	defaultEncoding?: string;
@@ -48,10 +49,12 @@ export interface Options {
 
 export interface EncoderStream {
 	write(str: string): Uint8Array;
+
 	end(): Uint8Array | undefined;
 }
 
 export interface DecoderStream {
 	write(buf: Uint8Array): string;
+
 	end(): string | undefined;
 }
