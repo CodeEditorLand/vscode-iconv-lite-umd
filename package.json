@@ -1,29 +1,6 @@
 {
-	"name": "@codeeditorland/iconv-lite-umd",
-	"version": "0.7.0",
-	"description": "Iconv-lite as UMD module",
-	"keywords": [
-		"iconv-lite",
-		"umd"
-	],
-	"homepage": "https://github.com/Microsoft/vscode-iconv-lite-umd#readme",
-	"bugs": {
-		"url": "https://github.com/Microsoft/vscode-iconv-lite-umd/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Microsoft/vscode-iconv-lite-umd.git"
-	},
-	"license": "MIT",
-	"author": "Microsoft",
-	"main": "lib/iconv-lite-umd.js",
-	"typings": "iconv-lite-umd.d.ts",
-	"scripts": {
-		"build": "webpack",
-		"prepublish": "webpack",
-		"test": "mocha --reporter spec --grep ."
-	},
 	"dependencies": {},
+	"description": "Iconv-lite as UMD module",
 	"devDependencies": {
 		"buffer": "^6.0.3",
 		"iconv": "^2.3.5",
@@ -34,5 +11,11 @@
 		"unorm": "^1.6.0",
 		"webpack": "^5.89.0",
 		"webpack-cli": "^5.1.4"
-	}
+	},
+	"main": "lib/iconv-lite-umd.js",
+	"name": "@codeeditorland/iconv-lite-umd",
+	"scripts": {
+		"build": "webpack"
+	},
+	"typings": "iconv-lite-umd.d.ts"
 }
